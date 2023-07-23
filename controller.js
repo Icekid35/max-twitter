@@ -1,6 +1,6 @@
 import express from "express";
 import path, { dirname } from "path";
-import modifiedTweets from "./modified-tweets.json" assert { type: "json" };
+import * as modifiedTweets from "./tweets.json" assert { type: "json" };
 import { TwitterApi } from "twitter-api-v2";
 import { config } from "dotenv";
 config();
